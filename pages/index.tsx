@@ -2,11 +2,8 @@ import styles from './page.module.css';
 import { GetStaticProps } from 'next';
 import { gql } from '@apollo/client';
 import { getApolloClient } from '../src/utils';
-
-type CharacterJSON = {
-  __typename: string;
-  name: String;
-};
+import { CharacterJSON } from '@/types';
+import TradingCardList from '../src/components/TradingCardList';
 
 type HomeProps = {
   characters: CharacterJSON[];
@@ -17,8 +14,7 @@ export default function Home({ characters }: HomeProps) {
 
   return (
     <main className={styles.main}>
-      <h1>Rick & Morty Character</h1>
-      {renderCharacterList(characters)}
+      <TradingCardList cards={characters} />
     </main>
   );
 }
@@ -46,6 +42,8 @@ export const getStaticProps: GetStaticProps = async () => {
         query {
           characters {
             results {
+              id
+              image
               name
             }
           }

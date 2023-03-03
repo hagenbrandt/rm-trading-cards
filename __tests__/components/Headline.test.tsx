@@ -1,6 +1,7 @@
 import { render, screen, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Headline, { HeadlineTypes } from '../../src/components/Headline';
+import Headline from '../../src/components/Headline';
+import { HeadlineTypes } from '../../src/types';
 
 describe('Headline', () => {
   const headlineTypes: HeadlineTypes[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];

@@ -1,0 +1,33 @@
+.card {
+  display: grid;
+
+  list-style: none;
+
+  width: 100%;
+}
+
+.card__link {
+  position: relative;
+  display: grid;
+  min-width: 100%;
+  grid-template-areas: 'card';
+}
+
+.card__link > * {
+  grid-area: card;
+}
+
+.card__headline {
+  width: fit-content;
+
+  background: var(--white-transparent);
+  color: var(--black);
+
+  align-self: end;
+  text-align: center;
+
+  padding: var(--space-4) var(--space-8);
+  margin: 0 auto var(--space-16);
+
+  z-index: 2;
+}

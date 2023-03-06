@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Letter Gothic Standard';
+  src: url('/assets/fonts/LetterGothicStd.otf') format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Letter Gothic Slanted';
+  src: url('/assets/fonts/LetterGothicStd-Slanted.otf') format('otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Letter Gothic Bold';
+  src: url('/assets/fonts/LetterGothicStd-BoldSlanted.otf') format('otf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Schwifty';
+  src: url('/assets/fonts/schwifty.ttf') format('ttf');
+  font-weight: 800;
+}

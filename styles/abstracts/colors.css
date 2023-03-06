@@ -1,0 +1,5 @@
+:root {
+  --white: #ffffff;
+  --white-transparent: hsla(0, 0%, 100%, 0.75);
+  --black: #000000;
+}

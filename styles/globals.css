@@ -1,0 +1,35 @@
+@import './abstracts/colors.css';
+@import './abstracts/font-faces.css';
+@import './abstracts/type-scale.css';
+@import './abstracts/spacing.css';
+@import './abstracts/border.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--white);
+  font-family: 'Letter Gothic Standard', 'Letter Gothic Bold',
+    'Letter Gothic Slanted', 'Schwifty', sans-serif;
+}
+
+h1 {
+  font-size: var(--fluent-heading-main);
+}
+
+h2 {
+  font-size: var(--fluent-heading-secondary);
+}
+
+h3 {
+  font-size: var(--fluent-heading-product);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

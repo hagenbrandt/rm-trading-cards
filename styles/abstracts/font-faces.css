@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Letter Gothic Standard';
-  src: url('/assets/fonts/LetterGothicStd.otf') format('otf');
+  src: url('/fonts/LetterGothicStd.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Letter Gothic Slanted';
-  src: url('/assets/fonts/LetterGothicStd-Slanted.otf') format('otf');
+  src: url('/fonts/LetterGothicStd-Slanted.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Letter Gothic Bold';
-  src: url('/assets/fonts/LetterGothicStd-BoldSlanted.otf') format('otf');
+  src: url('/fonts/LetterGothicStd-BoldSlanted.otf') format('opentype');
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Schwifty';
-  src: url('/assets/fonts/schwifty.ttf') format('ttf');
+  src: url('/fonts/schwifty.ttf') format('truetype');
   font-weight: 800;
 }

@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  min-height: var(--space-64);
+  border-bottom: var(--main-border);
+  padding: var(--space-16);
+}
+
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Schwifty', sans-serif;
+  color: var(--pelorous);
+  font-size: var(--fluent-heading-secondary);
+  text-shadow: var(--ocean-green) 1px 0 10px;
+}

@@ -1,9 +1,9 @@
-import styles from './page.module.css';
 import { GetStaticProps } from 'next';
 import { gql } from '@apollo/client';
 import { getApolloClient } from '../src/utils';
 import { CharacterJSON } from '@/types';
 import TradingCardList from '../src/components/TradingCardList';
+import Layout from '../src/layout/Layout';
 
 type HomeProps = {
   characters: CharacterJSON[];
@@ -13,9 +13,9 @@ export default function Home({ characters }: HomeProps) {
   console.log('Characters: ', characters);
 
   return (
-    <main className={styles.main}>
+    <Layout home>
       <TradingCardList cards={characters} />
-    </main>
+    </Layout>
   );
 }
 

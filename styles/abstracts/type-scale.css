@@ -1,0 +1,5 @@
+:root {
+  --fluent-heading-main: clamp(30px, 4vw, 60px);
+  --fluent-heading-secondary: clamp(18px, 2.5vw, 24px);
+  --fluent-heading-product: clamp(14px, 1vw, 18px);
+}

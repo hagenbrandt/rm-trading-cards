@@ -1,0 +1,32 @@
+.container {
+  padding: 0 2rem;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: var(--space-64);
+  border-bottom: var(--main-border);
+  padding: var(--space-16);
+}
+
+.header__title {
+  font-family: 'Schwifty', sans-serif;
+  color: var(--pelorous);
+}
+
+.main {
+  min-height: 100vh;
+  padding: var(--space-64) 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  padding: var(--space-32) 0;
+  border-top: var(--main-border);
+}

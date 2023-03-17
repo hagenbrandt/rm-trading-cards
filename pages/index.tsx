@@ -4,14 +4,13 @@ import { getApolloClient } from '../src/utils';
 import { CharacterJSON } from '@/types';
 import TradingCardList from '../src/components/TradingCardList';
 import Layout from '../src/layout/Layout';
+import { apiUri } from '../src/constants';
 
 type HomeProps = {
   characters: CharacterJSON[];
 };
 
 export default function Home({ characters }: HomeProps) {
-  console.log('Characters: ', characters);
-
   return (
     <Layout home>
       <TradingCardList cards={characters} />
@@ -34,7 +33,7 @@ export const renderCharacterList = (characters: CharacterJSON[]) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const client = getApolloClient('https://rickandmortyapi.com/graphql');
+  const client = getApolloClient(apiUri);
 
   if (client) {
     const { data } = await client.query({

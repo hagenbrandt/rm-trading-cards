@@ -15,6 +15,7 @@ WORKDIR /app
 ENV NODE_ENV production
 RUN addgroup --system --gid 1001 bloggroup
 RUN adduser --system --uid 1001 bloguser
+RUN npm install pm2 -g
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder --chown=bloguser:bloggroup /app/.next/standalone ./
@@ -26,4 +27,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-CMD ["node", "server.js"]
+CMD ["pm2-runtime", "server.js"]

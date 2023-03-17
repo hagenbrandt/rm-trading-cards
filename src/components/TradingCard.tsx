@@ -17,7 +17,7 @@ const TradingCard = ({ image, title, id, preLinkParam }: TradingCardProps) => {
 
   return (
     <li className={styles.card}>
-      <Link href={link}>
+      <Link href={`card/${link}`}>
         <a className={styles.card__link}>
           <Headline
             headlineText={title.headlineText}
